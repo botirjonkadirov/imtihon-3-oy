@@ -15,11 +15,13 @@
      
     }
     .hero-text {
-    width: 44.5rem;
+    width: 40rem;
+    height: 8.4rem;
     color: $secondary-grey;
     line-height: $text-lh;
     font-weight: 500;
     margin-bottom: 6.6rem;
+    padding: 0;
 }
     &-items {
         
@@ -93,9 +95,304 @@
 
 
 
+
+// main start
+.main-start-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/main-start-bg.png);
+    background-repeat: no-repeat;
+    background-position: right -265px bottom;
+    ul {
+       
+        display: flex;
+        justify-content: space-between;
+        gap: 9.5rem;
+        width: 100%;
+        margin-bottom: 5.8rem;
+        h2 {
+            font-size: $h2-font-size;
+            line-height: $h2-lh;
+            font-weight: 700;
+        }
+        p {
+            font-size: $text-font-size;
+            line-height: $text-lh;
+            font-weight: 500;
+        }
+    }
+    
+    // .main-start-pull {
+    //     padding-left: 9.5rem;
+    // }
+    // .main-start-pull2 {
+    //     padding-left: 25rem;
+    // }
+    // .main-start-pull3 {
+    //     padding-left: 29rem;
+    // }
+    // .main-start-pull4 {
+    //     padding-left: 25rem;
+    // }
+    hr {
+        width: 1110px;
+        height: 1px;
+        background-color: $primary-whtie;
+        border-style: none;
+        margin-top: 21.9rem;
+        margin-bottom: 7.2rem;
+    }
+  
+}
+.invisible-hr {
+    display: none;
+    width: 1110px;
+    height: 1px;
+    background-color: $primary-whtie;
+    border-style: none;
+    margin-top: 21.9rem;
+    margin-bottom: 7.2rem;
+}
+.main-start-pull {
+    width: 280px;
+}
+
+
+// main centr
+.main-centr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8.2rem;
+    h1 {
+        font-size: $h1-lage-font-size;
+        font-weight: 700;
+        line-height: $h1-lage-lh;
+    }
+    ul {
+        display: flex;
+        gap: 3rem;
+        margin-bottom: 6.9rem;
+    }
+    .main-centr-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 8rem;
+        align-items: center;
+    }
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: 0.7rem;
+        font-size: $h3-font-size;
+        line-height: $h3-lh;
+    }
+    p {
+        font-size: $text-font-size;
+        line-height: $text-lh;
+        font-weight: 500;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        z-index: 9;
+    }
+    .image-hover:hover {
+        opacity: 0.3;
+       
+    }
+    li {
+        position: relative;
+    }
+    li:hover {
+        .view-project {
+            display: block;
+        }
+        .view-code {
+            display: block;
+        }
+    }
+    .view-project {
+        display: none;
+        position: absolute;
+        left: 220px;
+        bottom: 350px;
+        z-index: 10;
+    }
+    .view-code {
+        display: none;
+        position: absolute;
+        left: 220px;
+        bottom: 220px;
+        z-index: 10;
+    }
+}
+
+
+// media main start
+
+
+@media (max-width:550px) {
+    .main-centr-container {
+       ul {
+        flex-direction: column;
+       }
+        .main-centr-nav {
+            flex-direction: column;
+        }
+    }
+ 
+}
+
+@media (max-width:600px) {
+    .main-centr-container {
+        h1 {
+            font-size: 4rem;
+            line-height: 1;
+        }
+    }
+   
+}
+
+
+@media (max-width:650px) {
+    .main-centr-container {
+        h1 {
+            font-size: 7.2rem;
+            line-height: 1;
+        }
+    }
+}
+@media (max-width:770px) {
+    .main-centr-container {
+        ul {
+            flex-direction: column;
+            gap: 6rem;
+        }
+    }
+}
+@media (max-width:1090px) {
+    .main-centr-container {
+        .view-project {
+            display: block;
+            position: absolute;
+            left: 20px;
+            bottom: -40px;
+            z-index: 10;
+        }
+        .view-code {
+            display: block;
+            position: absolute;
+            left: 200px;
+            bottom: -40px;
+            z-index: 10;
+        }
+       
+    }
+   
+}
+
+
+
+
+// media main start
+@media (max-width:650px) {
+    .invisible-hr {
+        display: block;
+        width: unset;
+        width: 100%;
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+    }
+    .main-start-container {
+        h2 {
+            font-size: 3.2rem;
+            line-height: $h2-lh;
+            font-weight: 700;
+        }
+        p {
+            font-size: $text-nav-font-size;
+            line-height: $text-nav-lh;
+            font-weight: 500;
+        }
+    }
+      .ul-wrapper {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .main-start-container {
+        ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 5.3rem;
+        }
+    }
+   
+} 
+
+@media (max-width:950px) {
+    .ul-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+        // background-color: aqua;
+    }
+   
+    .main-start-container {
+        ul {
+            flex-direction: column;
+            gap: 5.3rem;
+        }
+    }
+    .main-start-pull {
+        margin-left: unset;
+    }
+    .main-start-pull2 {
+        margin-left: unset;
+    }
+    .main-start-pull3 {
+        margin-left: unset;
+    }
+    .main-start-pull4 {
+        margin-left: unset;
+    }
+}
+@media (max-width:1140px) {
+    .main-start-container{
+        hr {
+            width: unset;
+            width: 100%;
+        }
+    }
+  
+    .main-start-pull {
+        margin-left: unset;
+    }
+    .main-start-pull2 {
+        margin-left: unset;
+    }
+    .main-start-pull3 {
+        margin-left: unset;
+    }
+    .main-start-pull4 {
+        margin-left: unset;
+    }
+}
+
+
+
+
+// media hero
 @media (max-width: 1300px) {
     .hero-h-one {
         width: unset;
+        height: unset;
         width: 100%;
         height: auto;
         
@@ -200,8 +497,9 @@
     width: 340px;
     width: 100%;
     height: auto;
-    align-items: center;
-    padding: 5rem;
+    // align-items: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
 }
  .main-crazy {
     flex-direction: row;
